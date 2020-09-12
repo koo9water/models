@@ -27,6 +27,11 @@ python model_main_tf2.py -- \
   --pipeline_config_path=$PIPELINE_CONFIG_PATH \
   --alsologtostderr
 """
+import sys
+mypath = 'C:/Users/Koowater/Documents/code/'
+sys.path.append(mypath + "models/research/")
+sys.path.append(mypath + "models/research/object_detection/utils")
+
 from absl import flags
 import tensorflow.compat.v2 as tf
 from object_detection import model_lib_v2
