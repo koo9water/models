@@ -29,6 +29,7 @@ python model_main_tf2.py -- \
 """
 import sys
 mypath = 'C:/Users/Koowater/Documents/code/'
+sys.path.append(mypath + "models/")
 sys.path.append(mypath + "models/research/")
 sys.path.append(mypath + "models/research/object_detection/utils")
 
